@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Fill Form Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="fill.css">
+</head>
+<body>
+  <div class="fill-container">
+    <h1>Fill Out This Form</h1>
+    <form id="fillForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="color">Favorite Color:</label>
+      <select id="color" name="color" required>
+        <option value="" disabled selected>Select a color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+      </select>
+      
+      <button type="submit">Submit</button>
+    </form>
+    <div id="result" class="result"></div>
+  </div>
+  <!-- Link to external JS file -->
+  <script src="fill.js"></script>
+</body>
+</html>
